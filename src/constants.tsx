@@ -5,20 +5,20 @@ import project1 from './assets/images/cecam.png';
 import project2 from './assets/images/d3m.png';
 import project3 from './assets/images/dm-sam.png';
 import project4 from './assets/images/ncct-ct.png';
-import project5 from './assets/images/lobes.png';
+import project5 from './assets/images/review.png';
+import project6 from './assets/images/lobes.png';
 
 export const PERSONAL_INFO = {
   name: "Haowen Pang",
   role: "PhD Student",
-  tagline: "Medical Image Synthesis. Medical Image Translation. Diffusion Model. Generative Adversarial Network. Flow Matching.",
+  tagline: "Medical Image Synthesis. Generative Adversarial Network. Diffusion Model. Flow Matching.",
   email: "haowen.pang@bit.edu.cn",
   github: "https://github.com/panghaowen-hub",
   googleScholar: "https://scholar.google.com/citations?user=eJEDpA0AAAAJ",
-  about: `I am a PhD student at the Beijing Institute of Technology, dedicated to advancing next-generation medical image synthesis. My work explores how diffusion models, uncertainty estimation, and domain knowledge can be leveraged to synthesize high-fidelity brain MR images—enabling contrast-agent dose reduction, contrast-free enhanced MRI generation, and more robust clinical imaging workflows.
-Before that, I completed my Master's degree at Northeastern University, where I developed deep learning methods for pulmonary CT analysis, including lung lobe and vessel segmentation and non-contrast to contrast-enhanced CT synthesis to support COPD diagnosis and treatment.
-I am currently a visiting PhD student in the group of Prof. Anqi Qiu at The Hong Kong Polytechnic University, working on knowledge-guided MRI-to-PET synthesis for neurodegenerative disease assessment, such as Alzheimer's disease.
-Beyond research, I enjoy tackling real-world problems through medical imaging challenges, and I am always open to collaboration.
-If you are interested in working together on challenge competitions or research projects, feel free to reach out.`
+  about: `I am a PhD student at the Beijing Institute of Technology, focusing on next-generation medical image synthesis. My research explores how diffusion models, uncertainty estimation, and domain knowledge can be integrated to generate high-fidelity brain MR images, with applications including contrast-agent dose reduction, contrast-free enhanced MRI synthesis, and more robust clinical imaging workflows.
+Prior to this, I received my Master's degree from Northeastern University, where I developed deep learning methods for pulmonary CT analysis, including lung lobe and vessel segmentation, as well as non-contrast to contrast-enhanced CT synthesis to support COPD diagnosis and treatment.
+From July 2025 to January 2026, I am a visiting PhD student at The Hong Kong Polytechnic University, working on MRI-to-PET synthesis for the assessment of neurodegenerative diseases such as Alzheimer's disease.
+Beyond academic research, I enjoy addressing real-world problems through medical imaging challenges and am always open to collaboration. If you are interested in working together on research projects or challenge competitions, please feel free to reach out.`
 };
 
 export const PROJECTS: Project[] = [
@@ -59,10 +59,18 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '5',
+    title: 'Review of Medical Image Synthesis',
+    description: 'Generative models for medical image creation and translation: A scoping review.',
+    tags: ['Image Synthesis', 'Review'],
+    imageUrl: project5,
+    demoUrl: 'https://www.mdpi.com/1424-8220/26/3/862',
+  },
+  {
+    id: '6',
     title: 'Pulmonary Lobes Segmentation',
     description: 'A fully automatic segmentation pipeline of pulmonary lobes before and after lobectomy from computed tomography images.',
     tags: ['Image Segmentation', 'nnU-Net', 'CT'],
-    imageUrl: project5,
+    imageUrl: project6,
     demoUrl: 'https://www.sciencedirect.com/science/article/abs/pii/S0010482522005595'
   }
 ];
@@ -76,21 +84,21 @@ export const SKILLS: Skill[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
-    company: "Hong Kong Polytechnic University",
-    role: "Visiting PhD Student",
-    period: "2025 - Present",
-    description: [
-      "Supervisor: Prof. Anqi Qiu.",
-      "Research Focus: PET image synthesis from MRI."
-    ]
-  },
-  {
     company: "Beijing Institute of Technology",
     role: "PhD Student",
     period: "2023 - Present",
     description: [
       "Supervisor: Prof. Chuyang Ye.",
-      "Research Focus: Medical image synthesis, diffusion Models, and GANs for brain MRI."
+      "Research Focus: Medical image synthesis and VLM for brain MRI."
+    ]
+  },
+  {
+    company: "Hong Kong Polytechnic University",
+    role: "Visiting PhD Student",
+    period: "2025 - 2026",
+    description: [
+      "Supervisor: Prof. Anqi Qiu.",
+      "Research Focus: PET image synthesis from MRI."
     ]
   },
   {
