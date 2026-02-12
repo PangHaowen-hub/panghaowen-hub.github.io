@@ -1,6 +1,6 @@
 import { SectionId } from '../types';
-import { PERSONAL_INFO, SKILLS, EXPERIENCE, INTERNSHIPS, AWARDS } from '../constants';
-import { GraduationCap, Briefcase, Trophy } from 'lucide-react';
+import { PERSONAL_INFO, SKILLS, AWARDS } from '../constants';
+import { Trophy } from 'lucide-react';
 
 const About = () => {
     return (
@@ -16,74 +16,7 @@ const About = () => {
                     </p>
                 </div>
 
-                {/* Row 2: Education & Internships */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
-                    {/* Education */}
-                    <div className="space-y-8">
-                        <h3 className="text-2xl font-semibold text-white mb-8">Education</h3>
-                        <div className="space-y-0 relative border-l border-slate-700 ml-3">
-                            {EXPERIENCE.map((job, index) => (
-                                <div key={index} className="relative pl-8 pb-12 last:pb-0 group">
-                                    {/* Dot */}
-                                    <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-slate-400 group-hover:bg-primary-500 group-hover:scale-125 transition-all"></div>
-
-                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                        <h4 className="text-xl font-bold text-white group-hover:text-primary-400 transition-colors">{job.role}</h4>
-                                        <span className="text-sm font-mono text-slate-500 bg-slate-800 px-2 py-1 rounded">{job.period}</span>
-                                    </div>
-
-                                    <div className="flex items-center gap-2 mb-4 text-slate-300">
-                                        <GraduationCap size={16} />
-                                        <span className="font-medium">{job.company}</span>
-                                    </div>
-
-                                    <ul className="space-y-2">
-                                        {job.description.map((desc, i) => (
-                                            <li key={i} className="text-slate-400 text-sm leading-relaxed flex items-start">
-                                                <span className="mr-2 mt-1.5 w-1 h-1 bg-slate-600 rounded-full shrink-0"></span>
-                                                {desc}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Internship Experience */}
-                    <div className="space-y-8">
-                        <h3 className="text-2xl font-semibold text-white mb-8">Internship Experience</h3>
-                        <div className="space-y-0 relative border-l border-slate-700 ml-3">
-                            {INTERNSHIPS.map((internship, index) => (
-                                <div key={index} className="relative pl-8 pb-12 last:pb-0 group">
-                                    {/* Dot */}
-                                    <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-slate-400 group-hover:bg-primary-500 group-hover:scale-125 transition-all"></div>
-
-                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                        <h4 className="text-xl font-bold text-white group-hover:text-primary-400 transition-colors">{internship.role}</h4>
-                                        <span className="text-sm font-mono text-slate-500 bg-slate-800 px-2 py-1 rounded">{internship.period}</span>
-                                    </div>
-
-                                    <div className="flex items-center gap-2 mb-4 text-slate-300">
-                                        <Briefcase size={16} />
-                                        <span className="font-medium">{internship.company}</span>
-                                    </div>
-
-                                    <ul className="space-y-2">
-                                        {internship.description.map((desc, i) => (
-                                            <li key={i} className="text-slate-400 text-sm leading-relaxed flex items-start">
-                                                <span className="mr-2 mt-1.5 w-1 h-1 bg-slate-600 rounded-full shrink-0"></span>
-                                                {desc}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-
-                {/* Row 3: Honors & Skills */}
+                {/* Honors & Skills */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     {/* Honors & Awards */}
                     <div className="space-y-6">
