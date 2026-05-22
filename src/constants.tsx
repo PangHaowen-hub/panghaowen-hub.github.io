@@ -1,5 +1,4 @@
-import { Terminal, Sigma, FileText, BarChart } from 'lucide-react';
-import type { Project, Experience, Skill, Internship, Award } from './types';
+import type { Project, Experience, Internship, Award } from './types';
 
 import project1 from './assets/images/cecam.png';
 import project2 from './assets/images/d3m.png';
@@ -73,13 +72,6 @@ export const PROJECTS: Project[] = [
     imageUrl: project6,
     demoUrl: 'https://www.sciencedirect.com/science/article/abs/pii/S0010482522005595'
   }
-];
-
-export const SKILLS: Skill[] = [
-  { name: 'Python', icon: <Terminal size={20} />, level: 95 },
-  { name: 'MATLAB', icon: <Sigma size={20} />, level: 80 },
-  { name: 'LaTeX', icon: <FileText size={20} />, level: 95 },
-  { name: 'R', icon: <BarChart size={20} />, level: 80 },
 ];
 
 export const EXPERIENCE: Experience[] = [

@@ -1,5 +1,5 @@
 import { SectionId } from '../types';
-import { PERSONAL_INFO, SKILLS, AWARDS } from '../constants';
+import { PERSONAL_INFO, AWARDS } from '../constants';
 import { Trophy } from 'lucide-react';
 
 const About = () => {
@@ -16,8 +16,8 @@ const About = () => {
                     </p>
                 </div>
 
-                {/* Honors & Skills */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                {/* Honors & Awards */}
+                <div>
                     {/* Honors & Awards */}
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold text-white">Honors & Awards</h3>
@@ -43,26 +43,6 @@ const About = () => {
                         </div>
                     </div>
 
-                    {/* Technical Proficiency */}
-                    <div className="space-y-6">
-                        <h3 className="text-2xl font-semibold text-white">Technical Proficiency</h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            {SKILLS.map((skill) => (
-                                <div key={skill.name} className="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50 hover:border-primary-500/30 transition-colors">
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <div className="text-primary-400">{skill.icon}</div>
-                                        <span className="font-medium text-slate-200">{skill.name}</span>
-                                    </div>
-                                    <div className="h-1.5 w-full bg-slate-700 rounded-full overflow-hidden">
-                                        <div
-                                            className="h-full bg-gradient-to-r from-primary-500 to-indigo-500 rounded-full"
-                                            style={{ width: `${skill.level}%` }}
-                                        ></div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
                 </div>
 
             </div>
