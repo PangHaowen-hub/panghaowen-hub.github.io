@@ -9,6 +9,7 @@ export const PERSONAL_INFO = {
   googleScholar: "https://scholar.google.com/citations?user=eJEDpA0AAAAJ",
   about: `I am a PhD student at the Beijing Institute of Technology, focusing on next-generation medical image synthesis. My research explores how diffusion models, uncertainty estimation, and domain knowledge can be integrated to generate high-fidelity brain MR images, with applications including contrast-agent dose reduction, contrast-free enhanced MRI synthesis, and more robust clinical imaging workflows.
 Prior to this, I received my Master's degree from Northeastern University, where I developed deep learning methods for pulmonary CT analysis, including lung lobe and vessel segmentation, as well as non-contrast to contrast-enhanced CT synthesis to support COPD diagnosis and treatment.
+From November 2024 to May 2025, I worked as an algorithm intern at Canon Medical Systems (China), researching missing-modality synthesis for lung CT and brain MRI.
 From July 2025 to January 2026, I am a visiting PhD student at The Hong Kong Polytechnic University, working on MRI-to-PET synthesis for the assessment of neurodegenerative diseases such as Alzheimer's disease.
 Beyond academic research, I enjoy addressing real-world problems through medical imaging challenges and am always open to collaboration. If you are interested in working together on research projects or challenge competitions, please feel free to reach out.`
 };

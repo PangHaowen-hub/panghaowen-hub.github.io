@@ -26,7 +26,7 @@ const Header = () => {
   const navLinks = [
     { label: 'Home', id: SectionId.HERO },
     { label: 'About', id: SectionId.ABOUT },
-    { label: 'Projects', id: SectionId.PROJECTS },
+    { label: 'Papers', id: SectionId.PROJECTS },
   ];
 
   return (

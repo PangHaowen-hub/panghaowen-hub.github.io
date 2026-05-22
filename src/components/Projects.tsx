@@ -4,10 +4,10 @@ import { BookOpen } from 'lucide-react';
 
 const Projects = () => {
   return (
-    <section id={SectionId.PROJECTS} className="py-24 bg-slate-900">
+    <section id={SectionId.PROJECTS} className="pt-10 pb-20 bg-slate-900">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Projects</h2>
+        <div className="mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Papers</h2>
             <div className="w-20 h-1.5 bg-primary-500 rounded-full"></div>
         </div>
 
