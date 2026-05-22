@@ -1,12 +1,5 @@
 import type { Project, Experience, Internship, Award } from './types';
 
-import project1 from './assets/images/cecam.png';
-import project2 from './assets/images/d3m.png';
-import project3 from './assets/images/dm-sam.png';
-import project4 from './assets/images/ncct-ct.png';
-import project5 from './assets/images/review.png';
-import project6 from './assets/images/lobes.png';
-
 export const PERSONAL_INFO = {
   name: "Haowen Pang",
   role: "PhD Student",
@@ -23,54 +16,45 @@ Beyond academic research, I enjoy addressing real-world problems through medical
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'CEMRI Dose Reduction',
-    description: 'Dose reduction via contrast amplification modeling for brain contrast-enhanced magnetic resonance images.',
-    tags: ['Image Synthesis', 'GAN', 'CEMRI'],
-    imageUrl: project1,
-    githubUrl: 'https://github.com/PangHaowen-hub/DRCAM',
-    demoUrl: 'https://www.sciencedirect.com/science/article/abs/pii/S174680942501585X'
+    title: 'DRCAM: Dose Reduction via Contrast Amplification Modeling for Brain Contrast-Enhanced Magnetic Resonance Images',
+    venue: 'Biomedical Signal Processing and Control',
+    date: 'March 2026',
+    url: 'https://www.sciencedirect.com/science/article/abs/pii/S174680942501585X'
   },
   {
     id: '2',
-    title: 'CEMRI Synthesis from NCMRI',
-    description: 'Deformation-driven diffusion model for synthesis of contrast-enhanced MRI with brain tumors.',
-    tags: ['Image Synthesis', 'Diffusion Model', 'Deformation', 'MRI'],
-    imageUrl: project2,
-    githubUrl: 'https://github.com/PangHaowen-hub/D3M',
-    demoUrl: 'https://link.springer.com/chapter/10.1007/978-3-032-05325-1_15'
+    title: 'D3M: Deformation-Driven Diffusion Model for Synthesis of Contrast-Enhanced MRI with Brain Tumors',
+    venue: 'Medical Image Computing and Computer Assisted Intervention (MICCAI)',
+    date: 'September 2025',
+    url: 'https://link.springer.com/chapter/10.1007/978-3-032-05325-1_15'
   },
   {
     id: '3',
-    title: 'Uncertainty-Guided Image Synthesis',
-    description: 'Cascaded diffusion model and segment anything model for medical image synthesis via uncertainty-guided prompt generation.',
-    tags: ['Image Synthesis', 'Diffusion Model', 'Segment Anything Model'],
-    imageUrl: project3,
-    githubUrl: 'https://github.com/PangHaowen-hub/DM-SAM',
-    demoUrl: 'https://link.springer.com/chapter/10.1007/978-3-031-96628-6_14',
+    title: 'Cascaded Diffusion Model and Segment Anything Model for Medical Image Synthesis via Uncertainty-Guided Prompt Generation',
+    venue: 'Information Processing in Medical Imaging (IPMI)',
+    date: 'August 2025',
+    url: 'https://link.springer.com/chapter/10.1007/978-3-031-96628-6_14',
   },
   {
     id: '4',
-    title: 'CECT Synthesis from NCCT',
-    description: 'NCCT-CECT image synthesizers and their application to pulmonary vessel segmentation.',
-    tags: ['Image Synthesis', 'GAN', 'CT', 'Vessel Segmentation'],
-    imageUrl: project4,
-    demoUrl: 'https://www.sciencedirect.com/science/article/abs/pii/S0169260723000561',
+    title: 'NCCT-CECT Image Synthesizers and Their Application to Pulmonary Vessel Segmentation',
+    venue: 'Computer Methods and Programs in Biomedicine',
+    date: 'April 2023',
+    url: 'https://www.sciencedirect.com/science/article/abs/pii/S0169260723000561',
   },
   {
     id: '5',
-    title: 'Review of Medical Image Synthesis',
-    description: 'Generative models for medical image creation and translation: A scoping review.',
-    tags: ['Image Synthesis', 'Review'],
-    imageUrl: project5,
-    demoUrl: 'https://www.mdpi.com/1424-8220/26/3/862',
+    title: 'Generative Models for Medical Image Creation and Translation: A Scoping Review',
+    venue: 'Sensors',
+    date: 'January 2026',
+    url: 'https://www.mdpi.com/1424-8220/26/3/862',
   },
   {
     id: '6',
-    title: 'Pulmonary Lobes Segmentation',
-    description: 'A fully automatic segmentation pipeline of pulmonary lobes before and after lobectomy from computed tomography images.',
-    tags: ['Image Segmentation', 'nnU-Net', 'CT'],
-    imageUrl: project6,
-    demoUrl: 'https://www.sciencedirect.com/science/article/abs/pii/S0010482522005595'
+    title: 'A Fully Automatic Segmentation Pipeline of Pulmonary Lobes Before and After Lobectomy from Computed Tomography Images',
+    venue: 'Computers in Biology and Medicine',
+    date: 'August 2022',
+    url: 'https://www.sciencedirect.com/science/article/abs/pii/S0010482522005595'
   }
 ];
 
