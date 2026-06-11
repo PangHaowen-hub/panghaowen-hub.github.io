@@ -15,7 +15,7 @@ export const PROJECTS: Project[] = [
     id: '1',
     title: 'Cascaded Diffusion Model and Segment Anything Model for Medical Image Synthesis',
     venue: 'Pattern Recognition',
-    date: '2026',
+    date: 'June 2026',
     url: 'https://doi.org/10.1016/j.patcog.2026.114148'
   },
   {
@@ -27,31 +27,31 @@ export const PROJECTS: Project[] = [
   },
   {
     id: '3',
+    title: 'Generative Models for Medical Image Creation and Translation: A Scoping Review',
+    venue: 'Sensors',
+    date: 'January 2026',
+    url: 'https://www.mdpi.com/1424-8220/26/3/862',
+  },
+  {
+    id: '4',
     title: 'D3M: Deformation-Driven Diffusion Model for Synthesis of Contrast-Enhanced MRI with Brain Tumors',
     venue: 'Medical Image Computing and Computer Assisted Intervention (MICCAI)',
     date: 'September 2025',
     url: 'https://link.springer.com/chapter/10.1007/978-3-032-05325-1_15'
   },
   {
-    id: '4',
+    id: '5',
     title: 'Cascaded Diffusion Model and Segment Anything Model for Medical Image Synthesis via Uncertainty-Guided Prompt Generation',
     venue: 'Information Processing in Medical Imaging (IPMI)',
     date: 'August 2025',
     url: 'https://link.springer.com/chapter/10.1007/978-3-031-96628-6_14',
   },
   {
-    id: '5',
+    id: '6',
     title: 'NCCT-CECT Image Synthesizers and Their Application to Pulmonary Vessel Segmentation',
     venue: 'Computer Methods and Programs in Biomedicine',
     date: 'April 2023',
     url: 'https://www.sciencedirect.com/science/article/abs/pii/S0169260723000561',
-  },
-  {
-    id: '6',
-    title: 'Generative Models for Medical Image Creation and Translation: A Scoping Review',
-    venue: 'Sensors',
-    date: 'January 2026',
-    url: 'https://www.mdpi.com/1424-8220/26/3/862',
   },
   {
     id: '7',
