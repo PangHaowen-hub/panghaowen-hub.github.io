@@ -7,51 +7,54 @@ export const PERSONAL_INFO = {
   email: "haowen.pang@bit.edu.cn",
   github: "https://github.com/panghaowen-hub",
   googleScholar: "https://scholar.google.com/citations?user=eJEDpA0AAAAJ",
-  about: `I am a PhD student at the Beijing Institute of Technology, focusing on next-generation medical image synthesis. My research explores how diffusion models, uncertainty estimation, and domain knowledge can be integrated to generate high-fidelity brain MR images, with applications including contrast-agent dose reduction, contrast-free enhanced MRI synthesis, and more robust clinical imaging workflows.
-From September 2020 to June 2023, I pursued my Master's degree at Northeastern University, where I developed deep learning methods for pulmonary CT analysis, including lung lobe and vessel segmentation, as well as non-contrast to contrast-enhanced CT synthesis to support COPD diagnosis and treatment.
-From November 2024 to May 2025, I worked as an algorithm intern at Canon Medical Systems (China), researching missing-modality synthesis for lung CT and brain MRI.
-From July 2025 to January 2026, I am a visiting PhD student at The Hong Kong Polytechnic University, working on MRI-to-PET synthesis for the assessment of neurodegenerative diseases such as Alzheimer's disease.
-Beyond academic research, I enjoy addressing real-world problems through medical imaging challenges and am always open to collaboration. If you are interested in working together on research projects or challenge competitions, please feel free to reach out.`
+  about: `I am a PhD student at the Beijing Institute of Technology, focusing on medical image synthesis. From September 2020 to June 2023, I pursued my Master's degree at Northeastern University, where I developed deep learning methods for pulmonary CT analysis, including lung lobe and vessel segmentation, as well as non-contrast to contrast-enhanced CT synthesis to support COPD diagnosis and treatment. From November 2024 to May 2025, I worked as an algorithm intern at Canon Medical Systems (China), researching missing-modality synthesis for lung CT and brain MRI. From July 2025 to January 2026, I am a visiting PhD student at The Hong Kong Polytechnic University, working on MRI-to-PET synthesis for the assessment of neurodegenerative diseases. If you are interested in working together on research projects or challenge competitions, please feel free to reach out.`
 };
 
 export const PROJECTS: Project[] = [
   {
     id: '1',
+    title: 'Cascaded Diffusion Model and Segment Anything Model for Medical Image Synthesis',
+    venue: 'Pattern Recognition',
+    date: '2026',
+    url: 'https://doi.org/10.1016/j.patcog.2026.114148'
+  },
+  {
+    id: '2',
     title: 'DRCAM: Dose Reduction via Contrast Amplification Modeling for Brain Contrast-Enhanced Magnetic Resonance Images',
     venue: 'Biomedical Signal Processing and Control',
     date: 'March 2026',
     url: 'https://www.sciencedirect.com/science/article/abs/pii/S174680942501585X'
   },
   {
-    id: '2',
+    id: '3',
     title: 'D3M: Deformation-Driven Diffusion Model for Synthesis of Contrast-Enhanced MRI with Brain Tumors',
     venue: 'Medical Image Computing and Computer Assisted Intervention (MICCAI)',
     date: 'September 2025',
     url: 'https://link.springer.com/chapter/10.1007/978-3-032-05325-1_15'
   },
   {
-    id: '3',
+    id: '4',
     title: 'Cascaded Diffusion Model and Segment Anything Model for Medical Image Synthesis via Uncertainty-Guided Prompt Generation',
     venue: 'Information Processing in Medical Imaging (IPMI)',
     date: 'August 2025',
     url: 'https://link.springer.com/chapter/10.1007/978-3-031-96628-6_14',
   },
   {
-    id: '4',
+    id: '5',
     title: 'NCCT-CECT Image Synthesizers and Their Application to Pulmonary Vessel Segmentation',
     venue: 'Computer Methods and Programs in Biomedicine',
     date: 'April 2023',
     url: 'https://www.sciencedirect.com/science/article/abs/pii/S0169260723000561',
   },
   {
-    id: '5',
+    id: '6',
     title: 'Generative Models for Medical Image Creation and Translation: A Scoping Review',
     venue: 'Sensors',
     date: 'January 2026',
     url: 'https://www.mdpi.com/1424-8220/26/3/862',
   },
   {
-    id: '6',
+    id: '7',
     title: 'A Fully Automatic Segmentation Pipeline of Pulmonary Lobes Before and After Lobectomy from Computed Tomography Images',
     venue: 'Computers in Biology and Medicine',
     date: 'August 2022',
