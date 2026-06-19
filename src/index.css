@@ -218,11 +218,11 @@ a:hover {
 
 .numbered-item {
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
-  gap: 12px;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 8px;
   align-items: start;
   break-inside: avoid;
-  padding: 12px 14px;
+  padding: 12px 12px 12px 10px;
   background: #fbfcfd;
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -266,7 +266,7 @@ a:hover {
 }
 
 .author-legend {
-  margin: -6px 0 12px 60px;
+  margin: -6px 0 12px 42px;
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 700;
@@ -347,8 +347,8 @@ a:hover {
   }
 
   .numbered-item {
-    grid-template-columns: 40px minmax(0, 1fr);
-    gap: 10px;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 8px;
     padding: 11px 10px;
   }
 
@@ -372,12 +372,8 @@ a:hover {
   }
 
   .numbered-item {
-    grid-template-columns: 1fr;
-  }
-
-  .item-number {
-    text-align: left;
-    line-height: 1;
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 7px;
   }
 }
 
