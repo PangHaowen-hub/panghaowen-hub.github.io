@@ -21,10 +21,7 @@ export const education = [
     location: 'Beijing, China',
     degree: 'Ph.D. -- Electronic Science and Technology',
     period: '09.2023 -- 06.2027',
-    details: [
-      'Ranked 21st in STEM-related Fields (ARWU 2025).',
-      'Diffusion Models for Medical Image Synthesis.',
-    ],
+    details: ['Diffusion Models for Medical Image Synthesis.'],
   },
   {
     school: 'Northeastern University',
@@ -48,14 +45,16 @@ export const publications = [
   {
     authors:
       'Haowen Pang, Xiaoming Hong, Peng Zhang, Pengli Zhu, Shun Yao, Fengping An, Guoyuan Yang, Tiantian Liu, Anqi Qiu, Chuyang Ye, and Tianyi Yan',
+    correspondingAuthors: ['Anqi Qiu', 'Chuyang Ye', 'Tianyi Yan'],
     title: 'Cascaded Diffusion Model and Segment Anything Model for Medical Image Synthesis',
     venue: 'Pattern Recognition',
     year: '2026',
-    note: 'Impact Factor: 9.1, Ranking: ENGINEERING, ELECTRICAL & ELECTRONIC 25/369, First author',
+    note: 'Impact Factor: 9.1, First author',
     url: 'https://doi.org/10.1016/j.patcog.2026.114148',
   },
   {
     authors: 'Haowen Pang, Yitao Zhu, Yingji Fu, Chuyang Ye, and Anqi Qiu',
+    correspondingAuthors: ['Chuyang Ye', 'Anqi Qiu'],
     title:
       'TGH-DB: Template-Guided Heteroscedastic Diffusion Model for Brain MRI-to-PET Synthesis',
     venue: 'International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)',
@@ -65,6 +64,7 @@ export const publications = [
   },
   {
     authors: 'Haowen Pang, Xiaoming Hong, Peng Zhang, Shannan Chen, and Chuyang Ye',
+    correspondingAuthors: ['Chuyang Ye'],
     title:
       'D3M: Deformation-Driven Diffusion Model for Synthesis of Contrast-Enhanced MRI with Brain Tumors',
     venue: 'International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)',
@@ -74,6 +74,7 @@ export const publications = [
   },
   {
     authors: 'Haowen Pang, Xiaoming Hong, Peng Zhang, and Chuyang Ye',
+    correspondingAuthors: ['Chuyang Ye'],
     title:
       'Cascaded Diffusion Model and Segment Anything Model for Medical Image Synthesis via Uncertainty-Guided Prompt Generation',
     venue: 'International Conference on Information Processing in Medical Imaging (IPMI)',
@@ -84,43 +85,50 @@ export const publications = [
   {
     authors:
       'Haowen Pang, Siyao Xu, Xinru Zhang, Fengping An, Xiaofeng Zhang, Ying Wang, Fujun Liu, Tianyi Yan, Patrick Marais, Yinfeng Qian, Yaou Liu, and Chuyang Ye',
+    correspondingAuthors: ['Siyao Xu', 'Yinfeng Qian', 'Yaou Liu', 'Chuyang Ye'],
     title:
       'DRCAM: Dose Reduction via Contrast Amplification Modeling for Brain Contrast-Enhanced Magnetic Resonance Images',
     venue: 'Biomedical Signal Processing and Control',
     year: '2025',
-    note: 'Impact Factor: 5.7, Ranking: ENGINEERING, BIOMEDICAL 33/130, First author',
+    note: 'Impact Factor: 5.7, First author',
     url: 'https://doi.org/10.1016/j.bspc.2025.109074',
   },
   {
     authors:
       'Haowen Pang, Shouliang Qi, Yanan Wu, Meihuan Wang, Chen Li, Yu Sun, Wei Qian, Guoyan Tang, Jiaxuan Xu, Zhenyu Liang, and Rongchang Chen',
+    correspondingAuthors: ['Shouliang Qi', 'Rongchang Chen'],
     title: 'NCCT-CECT Image Synthesizers and Their Application to Pulmonary Vessel Segmentation',
     venue: 'Computer Methods and Programs in Biomedicine',
     year: '2023',
-    note: 'Impact Factor: 6.4, Ranking: COMPUTER SCIENCE, THEORY & METHODS 14/146, First author',
+    note: 'Impact Factor: 6.4, First author',
     url: 'https://doi.org/10.1016/j.cmpb.2023.107389',
   },
   {
     authors:
       'Haowen Pang, Yanan Wu, Shouliang Qi, Chen Li, Jing Shen, Yong Yue, Wei Qian, and Jianlin Wu',
+    correspondingAuthors: ['Shouliang Qi'],
     title:
       'A Fully Automatic Segmentation Pipeline of Pulmonary Lobes Before and After Lobectomy from Computed Tomography Images',
     venue: 'Computers in Biology and Medicine',
     year: '2022',
-    note: 'Impact Factor: 6.3, Ranking: COMPUTER SCIENCE, INTERDISCIPLINARY APPLICATIONS 26/177, First author',
+    note: 'Impact Factor: 6.3, First author',
     url: 'https://doi.org/10.1016/j.compbiomed.2022.105792',
   },
   {
     authors:
       'Haowen Pang, Tiande Zhang, Yanan Wu, Shannan Chen, Wei Qian, Yudong Yao, Chuyang Ye, Patrice Monkam, and Shouliang Qi',
+    coFirstAuthors: ['Haowen Pang', 'Tiande Zhang'],
+    correspondingAuthors: ['Patrice Monkam', 'Shouliang Qi'],
     title: 'Generative Models for Medical Image Creation and Translation: A Scoping Review',
     venue: 'Sensors',
     year: '2026',
-    note: 'Impact Factor: 4.0, Ranking: ENGINEERING, ELECTRICAL & ELECTRONIC 127/369, First author',
+    note: 'Impact Factor: 4.0, First author',
     url: 'https://doi.org/10.3390/s26030862',
   },
   {
     authors: 'Haowen Pang, Xueqi Li, Tianyi Yan, and Chuyang Ye',
+    coFirstAuthors: ['Haowen Pang', 'Xueqi Li'],
+    correspondingAuthors: ['Chuyang Ye'],
     title: 'Ultra Low-Field MRI Enhancement via Conditional Diffusion Model',
     venue:
       'Enhancing Ultra-Low-Field MRI with Paired High-Field MRI Comparisons for Brain Imaging',
@@ -131,26 +139,30 @@ export const publications = [
   {
     authors:
       'Yanan Wu, Haowen Pang, Jing Shen, Shouliang Qi, Jie Feng, Yong Yue, Wei Qian, and Jianlin Wu',
+    coFirstAuthors: ['Yanan Wu', 'Haowen Pang', 'Jing Shen'],
+    correspondingAuthors: ['Shouliang Qi'],
     title:
       'Depicting and Predicting Changes of Lung After Lobectomy for Cancer by Using CT Images',
     venue: 'Medical & Biological Engineering & Computing',
     year: '2023',
-    note: 'Impact Factor: 3.1, Ranking: MATHEMATICAL & COMPUTATIONAL BIOLOGY 18/67, Co-First author',
+    note: 'Impact Factor: 3.1, Co-first author',
     url: 'https://doi.org/10.1007/s11517-023-02907-x',
   },
   {
     authors:
       'Tiande Zhang, Haowen Pang, Yanan Wu, Jiaxuan Xu, Lingkai Liu, Shang Li, Shuyue Xia, Rongchang Chen, Zhenyu Liang, and Shouliang Qi',
+    correspondingAuthors: ['Zhenyu Liang', 'Shouliang Qi'],
     title:
       'BreathVisionNet: A pulmonary-function-guided CNN-transformer hybrid model for expiratory CT image synthesis',
     venue: 'Computer Methods and Programs in Biomedicine',
     year: '2025',
-    note: 'Impact Factor: 6.4, Ranking: COMPUTER SCIENCE, THEORY & METHODS 14/146, Second author',
+    note: 'Impact Factor: 6.4, Second author',
     url: 'https://doi.org/10.1016/j.cmpb.2024.108516',
   },
   {
     authors:
       'Peng Zhang, Haowen Pang, Xinru Zhang, Xin Gao, Chenghao Liu, Xiaoming Hong, Runze Jiang, Yaou Liu, and Chuyang Ye',
+    correspondingAuthors: ['Chuyang Ye'],
     title:
       'Unsupervised Brain Tumor Segmentation via Bi-Level Optimization Guided by Radiological Reports',
     venue: 'MICCAI Workshop on Deep Generative Models',
@@ -162,14 +174,16 @@ export const publications = [
 
 export const patents = [
   {
-    authors: 'Shouliang Qi (Supervisor), Haowen Pang, Meihuan Wang, Yanan Wu, and Yingjian Yang',
+    authors: 'Shouliang Qi, Haowen Pang, Meihuan Wang, Yanan Wu, and Yingjian Yang',
+    correspondingAuthors: ['Shouliang Qi'],
     title: 'Image Translation and Segmentation Method and Apparatus, Electronic Device, and Storage Medium',
     id: '202211640385.9A[P]',
     registrationDate: '20-12-2022',
     grantDate: '17-02-2026',
   },
   {
-    authors: 'Shouliang Qi (Supervisor), Haowen Pang, Yanan Wu, and Yingjian Yang',
+    authors: 'Shouliang Qi, Haowen Pang, Yanan Wu, and Yingjian Yang',
+    correspondingAuthors: ['Shouliang Qi'],
     title:
       'Method and Apparatus for Extracting Postoperative Remaining Lung Lobes, Electronic Device, and Storage Medium',
     id: '202111394398.8A[P]',
@@ -177,14 +191,16 @@ export const patents = [
     grantDate: '04-06-2024',
   },
   {
-    authors: 'Shouliang Qi (Supervisor), Tiande Zhang, Haowen Pang, Yanan Wu, and Shuiqing Zhao',
+    authors: 'Shouliang Qi, Tiande Zhang, Haowen Pang, Yanan Wu, and Shuiqing Zhao',
+    correspondingAuthors: ['Shouliang Qi'],
     title: 'COPD Phenotype Determination Method and Apparatus, Electronic Device, and Storage Medium',
     id: '202310941656.2A[P]',
     registrationDate: '28-07-2023',
     grantDate: '19-12-2025',
   },
   {
-    authors: 'Shouliang Qi (Supervisor), Yanan Wu, Yingjian Yang, and Haowen Pang',
+    authors: 'Shouliang Qi, Yanan Wu, Yingjian Yang, and Haowen Pang',
+    correspondingAuthors: ['Shouliang Qi'],
     title: 'Lung Image Processing Method, Apparatus, Electronic Device, and Storage Medium',
     id: '202210507864.7A[P]',
     registrationDate: '11-05-2022',
@@ -222,15 +238,15 @@ export const awards = [
 
 export const internships = [
   {
-    organization: 'The Hong Kong Polytechnic University -- Visiting Student',
-    role: 'Research on MRI-to-PET synthesis under the supervision of Prof. Anqi Qiu.',
+    organization: 'The Hong Kong Polytechnic University',
+    role: 'Visiting Student',
     period: '07.2025 -- 01.2026',
     location: 'Hong Kong, China',
     focus: 'Research on MRI-to-PET synthesis under the supervision of Prof. Anqi Qiu.',
   },
   {
-    organization: 'Canon Medical Systems (China) -- Intern',
-    role: 'Research on NCCT-to-CECT synthesis for pulmonary embolism screening.',
+    organization: 'Canon Medical Systems (China)',
+    role: 'Intern',
     period: '11.2024 -- 05.2025',
     location: 'Beijing, China',
     focus: 'Research on NCCT-to-CECT synthesis for pulmonary embolism screening.',

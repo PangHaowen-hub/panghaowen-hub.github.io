@@ -9,12 +9,53 @@ import {
   skills,
 } from './constants';
 
+type MarkedItem = {
+  authors: string;
+  coFirstAuthors?: string[];
+  correspondingAuthors?: string[];
+};
+
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="cv-section">
       <h2>{title}</h2>
       {children}
     </section>
+  );
+}
+
+function splitAuthors(authors: string) {
+  return authors
+    .replace(/, and /g, ', ')
+    .replace(/ and /g, ', ')
+    .split(',')
+    .map((author) => author.trim())
+    .filter(Boolean);
+}
+
+function AuthorList({ item }: { item: MarkedItem }) {
+  const authors = splitAuthors(item.authors);
+
+  return (
+    <span className="authors">
+      {authors.map((author, index) => {
+        const plainName = author.replace(/\s*\(Supervisor\)/, '');
+        const isCurrentAuthor = plainName === 'Haowen Pang';
+        const isCoFirst = item.coFirstAuthors?.includes(plainName);
+        const isCorresponding = item.correspondingAuthors?.includes(plainName);
+
+        return (
+          <span key={`${author}-${index}`}>
+            {index > 0 && (index === authors.length - 1 ? ', and ' : ', ')}
+            <span className={isCurrentAuthor ? 'current-author' : undefined}>
+              {plainName}
+            </span>
+            {isCoFirst && <sup>†</sup>}
+            {isCorresponding && <sup>*</sup>}
+          </span>
+        );
+      })}
+    </span>
   );
 }
 
@@ -85,12 +126,13 @@ function App() {
       </Section>
 
       <Section title="Selected Journals and Conferences">
+        <p className="author-legend">† Co-first author · * Corresponding author</p>
         <div className="publication-list">
           {publications.map((paper, index) => (
             <article className="numbered-item" key={paper.title}>
               <div className="item-number">[{index + 1}]</div>
               <p>
-                <span className="authors">{paper.authors}</span>.{' '}
+                <AuthorList item={paper} />.{' '}
                 {paper.url ? (
                   <a href={paper.url} target="_blank" rel="noreferrer">
                     {paper.title}
@@ -107,12 +149,13 @@ function App() {
       </Section>
 
       <Section title="Selected Patents">
+        <p className="author-legend">* Corresponding inventor</p>
         <div className="publication-list">
           {patents.map((patent, index) => (
             <article className="numbered-item" key={patent.id}>
               <div className="item-number">[{index + 1}]</div>
               <p>
-                {patent.authors}. <strong>{patent.title}</strong>. China Patent:{' '}
+                <AuthorList item={patent} />. <strong>{patent.title}</strong>. China Patent:{' '}
                 <strong>{patent.id}</strong>. Registration Date: {patent.registrationDate},
                 Grant Date: {patent.grantDate}.
               </p>
