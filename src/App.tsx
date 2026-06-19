@@ -85,9 +85,10 @@ function App() {
       </Section>
 
       <Section title="Selected Journals and Conferences">
-        <ol className="publication-list">
-          {publications.map((paper) => (
-            <li key={paper.title}>
+        <div className="publication-list">
+          {publications.map((paper, index) => (
+            <article className="numbered-item" key={paper.title}>
+              <div className="item-number">[{index + 1}]</div>
               <p>
                 <span className="authors">{paper.authors}</span>.{' '}
                 {paper.url ? (
@@ -100,23 +101,24 @@ function App() {
                 . <em>{paper.venue}</em>, {paper.year}.{' '}
                 <span className="paper-note">({paper.note})</span>
               </p>
-            </li>
+            </article>
           ))}
-        </ol>
+        </div>
       </Section>
 
       <Section title="Selected Patents">
-        <ol className="publication-list">
-          {patents.map((patent) => (
-            <li key={patent.id}>
+        <div className="publication-list">
+          {patents.map((patent, index) => (
+            <article className="numbered-item" key={patent.id}>
+              <div className="item-number">[{index + 1}]</div>
               <p>
                 {patent.authors}. <strong>{patent.title}</strong>. China Patent:{' '}
                 <strong>{patent.id}</strong>. Registration Date: {patent.registrationDate},
                 Grant Date: {patent.grantDate}.
               </p>
-            </li>
+            </article>
           ))}
-        </ol>
+        </div>
       </Section>
 
       <Section title="Awards and Honors">
