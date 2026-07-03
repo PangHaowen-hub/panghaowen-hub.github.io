@@ -126,6 +126,16 @@ export const publications = [
     url: 'https://doi.org/10.3390/s26030862',
   },
   {
+    authors: 'Haowen Pang, Weiyan Guo, and Chuyang Ye',
+    correspondingAuthors: ['Chuyang Ye'],
+    title: 'Multi-modal brain MRI synthesis based on SwinUNETR',
+    venue:
+      'Traumatic Brain Injuries, Medical Image De-Identification, and Brain Tumor Segmentation: MICCAI 2024 Challenges: AIMS-TBI 2024, MIDI-B 2024, FeTS 2024, BraTS 2024, and Beyond-BraTS 2024',
+    year: '2026',
+    note: 'MICCAI Workshop, First author',
+    url: '',
+  },
+  {
     authors: 'Haowen Pang, Xueqi Li, Tianyi Yan, and Chuyang Ye',
     coFirstAuthors: ['Haowen Pang', 'Xueqi Li'],
     correspondingAuthors: ['Chuyang Ye'],
@@ -133,8 +143,8 @@ export const publications = [
     venue:
       'Enhancing Ultra-Low-Field MRI with Paired High-Field MRI Comparisons for Brain Imaging',
     year: '2026',
-    note: 'First author',
-    url: '',
+    note: 'MICCAI Workshop, First author',
+    url: 'https://doi.org/10.1007/978-3-032-23344-8_2',
   },
   {
     authors:
