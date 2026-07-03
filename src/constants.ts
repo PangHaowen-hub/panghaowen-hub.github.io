@@ -182,42 +182,6 @@ export const publications = [
   },
 ];
 
-export const patents = [
-  {
-    authors: 'Shouliang Qi, Haowen Pang, Meihuan Wang, Yanan Wu, and Yingjian Yang',
-    correspondingAuthors: ['Shouliang Qi'],
-    title: 'Image Translation and Segmentation Method and Apparatus, Electronic Device, and Storage Medium',
-    id: '202211640385.9A[P]',
-    registrationDate: '20-12-2022',
-    grantDate: '17-02-2026',
-  },
-  {
-    authors: 'Shouliang Qi, Haowen Pang, Yanan Wu, and Yingjian Yang',
-    correspondingAuthors: ['Shouliang Qi'],
-    title:
-      'Method and Apparatus for Extracting Postoperative Remaining Lung Lobes, Electronic Device, and Storage Medium',
-    id: '202111394398.8A[P]',
-    registrationDate: '23-11-2021',
-    grantDate: '04-06-2024',
-  },
-  {
-    authors: 'Shouliang Qi, Tiande Zhang, Haowen Pang, Yanan Wu, and Shuiqing Zhao',
-    correspondingAuthors: ['Shouliang Qi'],
-    title: 'COPD Phenotype Determination Method and Apparatus, Electronic Device, and Storage Medium',
-    id: '202310941656.2A[P]',
-    registrationDate: '28-07-2023',
-    grantDate: '19-12-2025',
-  },
-  {
-    authors: 'Shouliang Qi, Yanan Wu, Yingjian Yang, and Haowen Pang',
-    correspondingAuthors: ['Shouliang Qi'],
-    title: 'Lung Image Processing Method, Apparatus, Electronic Device, and Storage Medium',
-    id: '202210507864.7A[P]',
-    registrationDate: '11-05-2022',
-    grantDate: '10-06-2025',
-  },
-];
-
 export const awards = [
   {
     title: '2nd Prize in MICCAI 2024 Challenge',

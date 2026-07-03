@@ -3,7 +3,6 @@ import {
   awards,
   education,
   internships,
-  patents,
   personal,
   publications,
   skills,
@@ -142,22 +141,6 @@ function App() {
                 )}
                 . <em>{paper.venue}</em>, {paper.year}.{' '}
                 <span className="paper-note">({paper.note})</span>
-              </p>
-            </article>
-          ))}
-        </div>
-      </Section>
-
-      <Section title="Selected Patents">
-        <p className="author-legend">* Corresponding inventor</p>
-        <div className="publication-list">
-          {patents.map((patent, index) => (
-            <article className="numbered-item" key={patent.id}>
-              <div className="item-number">[{index + 1}]</div>
-              <p>
-                <AuthorList item={patent} />. <strong>{patent.title}</strong>. China Patent:{' '}
-                <strong>{patent.id}</strong>. Registration Date: {patent.registrationDate},
-                Grant Date: {patent.grantDate}.
               </p>
             </article>
           ))}
