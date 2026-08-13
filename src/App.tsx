@@ -5,8 +5,8 @@ import { awards, education, internships, personal, publications, skills } from '
 
 type MarkedItem = { authors: string; coFirstAuthors?: string[]; correspondingAuthors?: string[] };
 const navItems = [
-  ['About', '#about'], ['Publications', '#publications'], ['Experience', '#experience'],
-  ['Honors', '#honors'], ['Skills', '#skills'],
+  ['About', '#about'], ['Publications', '#publications'], ['Education', '#education'],
+  ['Experience', '#experience'], ['Honors', '#honors'], ['Skills', '#skills'],
 ];
 
 function splitAuthors(authors: string) {
@@ -76,10 +76,16 @@ function App() {
             </div></article>)}</div>
         </section>
 
-        <section className="content-section" id="experience">
-          <SectionHeading eyebrow="Background" title="Education & Experience" icon={<BriefcaseBusiness />} />
+        <section className="content-section" id="education">
+          <SectionHeading eyebrow="Academic Background" title="Education" icon={<GraduationCap />} />
           <div className="timeline">
             {education.map((item) => <article className="timeline-item" key={item.school}><div className="timeline-date">{item.period}</div><div><h3>{item.school}</h3><p className="timeline-subtitle">{item.degree}</p><p className="timeline-location">{item.location}</p>{item.details.map((d) => <p className="timeline-detail" key={d}>{d}</p>)}</div></article>)}
+          </div>
+        </section>
+
+        <section className="content-section" id="experience">
+          <SectionHeading eyebrow="Professional Background" title="Experience" icon={<BriefcaseBusiness />} />
+          <div className="timeline">
             {internships.map((item) => <article className="timeline-item" key={item.organization}><div className="timeline-date">{item.period}</div><div><h3>{item.organization}</h3><p className="timeline-subtitle">{item.role}</p><p className="timeline-location">{item.location}</p><p className="timeline-detail">{item.focus}</p></div></article>)}
           </div>
         </section>

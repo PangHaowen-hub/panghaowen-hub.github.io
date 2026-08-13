@@ -126,6 +126,25 @@ export const publications = [
     url: 'https://doi.org/10.3390/s26030862',
   },
   {
+    authors: 'Haowen Pang, Yingqi Hao, and Pengli Zhu',
+    correspondingAuthors: ['Pengli Zhu'],
+    title: 'Task-Adaptive 3D Cross-Field MRI Translation via Field-Conditioned Content-Style Pretraining',
+    venue: 'MRIxFields',
+    year: '2026',
+    note: 'MICCAI Workshop, First author, Accepted',
+    url: '',
+  },
+  {
+    authors: 'Haowen Pang, Pengli Zhu, Shannan Chen, Xiaoming Hong, and Chuyang Ye',
+    coFirstAuthors: ['Haowen Pang', 'Pengli Zhu'],
+    correspondingAuthors: ['Chuyang Ye'],
+    title: 'nnDiffusion: A Standardized 3D Diffusion Framework for Medical Image Synthesis',
+    venue: 'Eleventh International Workshop on Simulation and Synthesis in Medical Imaging',
+    year: '2026',
+    note: 'MICCAI Workshop, Co-first author, Accepted',
+    url: '',
+  },
+  {
     authors: 'Haowen Pang, Weiyan Guo, and Chuyang Ye',
     correspondingAuthors: ['Chuyang Ye'],
     title: 'Multi-modal brain MRI synthesis based on SwinUNETR',
@@ -157,28 +176,6 @@ export const publications = [
     year: '2023',
     note: 'Impact Factor: 3.1, Co-first author',
     url: 'https://doi.org/10.1007/s11517-023-02907-x',
-  },
-  {
-    authors:
-      'Tiande Zhang, Haowen Pang, Yanan Wu, Jiaxuan Xu, Lingkai Liu, Shang Li, Shuyue Xia, Rongchang Chen, Zhenyu Liang, and Shouliang Qi',
-    correspondingAuthors: ['Zhenyu Liang', 'Shouliang Qi'],
-    title:
-      'BreathVisionNet: A pulmonary-function-guided CNN-transformer hybrid model for expiratory CT image synthesis',
-    venue: 'Computer Methods and Programs in Biomedicine',
-    year: '2025',
-    note: 'Impact Factor: 6.4, Second author',
-    url: 'https://doi.org/10.1016/j.cmpb.2024.108516',
-  },
-  {
-    authors:
-      'Peng Zhang, Haowen Pang, Xinru Zhang, Xin Gao, Chenghao Liu, Xiaoming Hong, Runze Jiang, Yaou Liu, and Chuyang Ye',
-    correspondingAuthors: ['Chuyang Ye'],
-    title:
-      'Unsupervised Brain Tumor Segmentation via Bi-Level Optimization Guided by Radiological Reports',
-    venue: 'MICCAI Workshop on Deep Generative Models',
-    year: '2025',
-    note: 'Second author',
-    url: 'https://doi.org/10.1007/978-3-032-05472-2_3',
   },
 ];
 
